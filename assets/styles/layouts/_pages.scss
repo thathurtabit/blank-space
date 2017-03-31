@@ -1,0 +1,103 @@
+// @include media-breakpoint-up(sm) {
+// }
+// @include media-breakpoint-up(md) {
+// }
+// @include media-breakpoint-up(lg) {
+// }
+// @include media-breakpoint-up(xl) {
+// }
+
+
+// BY DEFAULT SPACING THINGS OUT A BIT
+.full-panel {
+	transition: opacity $transition-time ease-in-out;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+
+	.active & {
+		opacity: 1; 
+	}
+}
+
+
+.content-wrap {
+	height: 100vh;
+	width: 100%;
+	max-width: 100%; /*limit width*/
+	position: relative;
+}
+
+
+#panel-info1 .content-block--1 {
+	background: $white;
+}
+
+.content-block--3 {
+	background: $blue;
+}
+
+// RESPONSIVE FROM LARGE
+@include media-breakpoint-up(lg) {
+
+	.barba-container {
+		margin: 0 $page-spacing-sides 0;
+		background: $white;
+	}
+
+
+	.content-block {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.content-block--1 {
+		top: 0;
+		left: 0;
+		width: 50%; // percent-based because Chrome gets confused with the scrollbar
+		height: 50vh;
+
+		// If it's the first one, show it above the rest
+		#panel-info1 & {
+			z-index: $zindex-dropdown-backdrop;
+		}
+
+		// When Waypoint is active
+		.waypoint-active & {
+			position: fixed;
+			top: $page-spacing-top;
+			width: 50% - $page-spacing-sides;
+			left: $page-spacing-sides;
+		}
+	}
+
+	.content-block--2 {
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		height: 50vh;
+	}
+
+	.content-block--3 {
+		bottom: 0;
+		top: $page-spacing-top;
+		right: 0;
+		width: 50%; // percent-based because Chrome gets confused with the scrollbar
+		height: 100vh;
+		
+
+		// When Waypoint is active
+		.waypoint-active & {
+			position: fixed;
+			top: $page-spacing-top;
+			width: 50% - $page-spacing-sides;
+			right: $page-spacing-sides;
+		}
+	}
+}

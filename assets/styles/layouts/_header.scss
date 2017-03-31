@@ -1,0 +1,25 @@
+// @include media-breakpoint-up(sm) {
+// }
+// @include media-breakpoint-up(md) {
+// }
+// @include media-breakpoint-up(lg) {
+// }
+// @include media-breakpoint-up(xl) {
+// }
+
+
+.navbar {
+	background-color: $body-bg;
+	height: $page-spacing-top;
+}
+
+#sub-nav {
+	position: fixed;
+	top: 100px;
+	left: 0;
+	z-index: $zindex-navbar;
+
+	.active {
+		color: $red;
+	}
+}
