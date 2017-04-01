@@ -3,12 +3,18 @@
 // HEADER
 $pageName = 'About Stephen Fairbaks |';
 $myPath = '';
+$currentPage = "nav-cur--about";
 
 include_once('dist/includes/head.inc.php'); ?>
-<?php include_once('dist/includes/nav.inc.php'); ?>     
-      <div id="barba-wrapper">
-        <!-- BARBA CONTAINER -->
+
+   <div id="barba-wrapper">
+    
+    <!-- BARBA CONTAINER -->
     <div class="barba-container">
+
+    <!-- NAVBAR -->
+    <?php include_once('dist/includes/nav.inc.php'); ?>
+
       <!-- INNER CONTAINER -->
       <div id="about" class="inner-container">
         <ul id="sub-nav" class="nav flex-column" role="tablist">
@@ -22,7 +28,7 @@ include_once('dist/includes/head.inc.php'); ?>
   		<div id="panel-info1" class="full-panel panel--info1">
   			<div class="content-wrap">
           <div class="content-block content-block--1">          
-            <h1>About</h1>
+            <h1 class="trans-letters"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></h1>
             <h2>Vital statistics</h2>
           </div>
           <div class="content-block content-block--2">          

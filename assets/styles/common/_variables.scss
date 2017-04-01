@@ -4,8 +4,10 @@
 // the Bootstrap defaults without modifying key, versioned files.
 
 $transition-time: 0.5s;
+$transition-type: cubic-bezier(.27,.16,.01,.99);
 $page-spacing-top: 8vh;
 $page-spacing-sides: 3%;
+$navbar-height: 75px;
 
 
 // Table of Contents

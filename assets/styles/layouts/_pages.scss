@@ -11,12 +11,15 @@
 // BY DEFAULT SPACING THINGS OUT A BIT
 .full-panel {
 	transition: opacity $transition-time ease-in-out;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
+
+	@include media-breakpoint-up(lg) {
+		height: 100vh;
+	}
 
 	.active & {
 		opacity: 1; 
@@ -25,10 +28,13 @@
 
 
 .content-wrap {
-	height: 100vh;
 	width: 100%;
 	max-width: 100%; /*limit width*/
 	position: relative;
+
+	@include media-breakpoint-up(lg) {
+		height: 100vh;
+	}
 }
 
 
@@ -38,6 +44,14 @@
 
 .content-block--2 {
 	padding: 0 3%;
+
+	.panel--last & {
+		background: $gray!important;
+	}
+}
+
+.full-panel .content-block--2 {
+	background: darken($white, 3%);
 }
 
 .content-block--3 {
@@ -45,8 +59,16 @@
 }
 
 
+
+
 .inner-container {
 	overflow: hidden;
+	margin-top: $navbar-height;
+	background: adjust-hue($brand-primary, 10%);
+	@include media-breakpoint-up(lg) {
+		top: $page-spacing-top;
+		margin-top: 0;
+	}
 }
 
 // ADD THE BG FONT FOR EACH PAGE
@@ -61,7 +83,7 @@
 	right: 0;
 	line-height: 60vw;
 	text-align: center;
-	font-weight: 300;
+	font-weight: 800;
 	color: rgba(0,0,0,0.04);
 	font-size: 50vw;
 	z-index: 2;
@@ -90,7 +112,16 @@
 	content: "Contact";
 }
 
-
+.content-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	min-height: 300px;
+	position: relative;
+}
 
 
 
@@ -142,11 +173,7 @@
 
 	.content-block {
 		position: absolute;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
+		background: transparent;
 	}
 
 	.content-block--1 {
@@ -176,7 +203,10 @@
 		left: 0;
 		width: 50%;
 		height: 50vh;
+		z-index: 2;
 	}
+
+	
 
 	.content-block--3,
 	.skin-float {
@@ -186,41 +216,9 @@
 		width: 50%; // percent-based because Chrome gets confused with the scrollbar
 		height: 100vh;
 	}
+
+	// When Waypoint is active
 	.skin-float {
-		transition: opacity $transition-time * 3 ease-out;
-		transition-delay: $transition-time;
-		opacity: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-
-		.active.loaded & {
-			opacity: 1;
-		}
-
-		.panel--info1 & {
-			background: url(../images/skin-layer1.png) no-repeat center;
-		}
-		.panel--info2 & {
-			background: url(../images/skin-layer2.png) no-repeat center;
-		}
-		.panel--info3 & {
-			background: url(../images/skin-layer3.png) no-repeat center;
-		}
-		.panel--info4 & {
-			background: url(../images/skin-layer4.png) no-repeat center;
-		}
-		.panel--info5 & {
-			background: url(../images/skin-layer5.png) no-repeat center;
-		}
-		.panel--info6 & {
-			background: url(../images/skin-layer6.png) no-repeat center;
-		}
-		.panel--info7 & {
-			background: url(../images/skin-layer7.png) no-repeat center;
-		}
-		// When Waypoint is active
 		.waypoint-active & {
 			position: fixed;
 			top: $page-spacing-top;
@@ -228,4 +226,62 @@
 			right: $page-spacing-sides;
 		}
 	}
+	
+}
+
+
+.skin-float {
+	transition: opacity $transition-time * 3 ease-out;
+	transition-delay: $transition-time;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	justify-content: center;
+	background-size: contain!important;
+	width: 100%;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+
+	@include media-breakpoint-up(lg) {
+		background-size: initial!important;
+		align-items: center;
+		position: relative;
+		top: initial;
+		left: initial;
+		right: initial;
+		bottom: initial;
+	}
+
+	.active.loaded & {
+		opacity: 1;
+	}
+
+	.panel--info1 & {
+		background: url(../images/skin-layer1.png) no-repeat center;
+	}
+	.panel--info2 & {
+		background: url(../images/skin-layer2.png) no-repeat center;
+	}
+	.panel--info3 & {
+		background: url(../images/skin-layer3.png) no-repeat center;
+	}
+	.panel--info4 & {
+		background: url(../images/skin-layer4.png) no-repeat center;
+	}
+	.panel--info5 & {
+		background: url(../images/skin-layer5.png) no-repeat center;
+	}
+	.panel--info6 & {
+		background: url(../images/skin-layer6.png) no-repeat center;
+	}
+	.panel--info7 & {
+		background: url(../images/skin-layer7.png) no-repeat center;
+	}
+	
+	
 }

@@ -3,12 +3,18 @@
 // HEADER
 $pageName = 'Contact Stephen Fairbanks |';
 $myPath = '';
+$currentPage = "nav-cur--contact";
 
 include_once('dist/includes/head.inc.php'); ?>
-<?php include_once('dist/includes/nav.inc.php'); ?>     
-      <div id="barba-wrapper">
-        <!-- BARBA CONTAINER -->
+
+  <div id="barba-wrapper">
+    
+    <!-- BARBA CONTAINER -->
     <div class="barba-container">
+
+      <!-- NAVBAR -->
+    <?php include_once('dist/includes/nav.inc.php'); ?>
+
       <!-- INNER CONTAINER -->
       <div id="contact" class="inner-container">
         <ul id="sub-nav" class="nav flex-column" role="tablist">
@@ -22,7 +28,7 @@ include_once('dist/includes/head.inc.php'); ?>
       <div id="panel-info1" class="full-panel panel--info1">
         <div class="content-wrap">
           <div class="content-block content-block--1">          
-            <h1>Contact</h1>
+            <h1 class="trans-letters"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></h1>
             <h2>Get in touch</h2>
           </div>
           <div class="content-block content-block--2">          
