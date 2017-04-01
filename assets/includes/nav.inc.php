@@ -6,7 +6,7 @@ $root = "http://localhost:3000/blank-space";
 ?>
 
 
-<nav class="navbar navbar-toggleable-sm fixed-top <?php echo $currentPage ?>">
+<nav class="navbar navbar-toggleable-sm fixed-top <?php echo $currentNav ?>">
   <a class="navbar-brand nav-link mr-auto btn--slide-hover" href="<?php echo $root ?>" title="<?php echo $websiteName; ?>"><h1><?php echo $websiteName; ?></h1></a>
 
   <div class="navbar-wrap">

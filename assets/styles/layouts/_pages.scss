@@ -204,6 +204,21 @@
 		width: 50%;
 		height: 50vh;
 		z-index: 2;
+
+				// If it's the first one, show it above the rest
+		#panel-info1 & {
+			z-index: $zindex-dropdown-backdrop;
+		}
+
+		// When Waypoint is active
+		.page--about .waypoint-active &,
+		.page--contact .waypoint-active & {
+			position: fixed;
+			bottom: 0;
+			height: 50vh;
+			width: 50% - $page-spacing-sides;
+			left: $page-spacing-sides;
+		}
 	}
 
 	
@@ -219,7 +234,7 @@
 
 	// When Waypoint is active
 	.skin-float {
-		.waypoint-active & {
+		.page--home .waypoint-active & {
 			position: fixed;
 			top: $page-spacing-top;
 			width: 50% - $page-spacing-sides;

@@ -3,7 +3,7 @@
 // HEADER
 $pageName = 'Contact Stephen Fairbanks |';
 $myPath = '';
-$currentPage = "nav-cur--contact";
+$currentNav = "nav-cur--contact";
 
 include_once('dist/includes/head.inc.php'); ?>
 
@@ -16,7 +16,7 @@ include_once('dist/includes/head.inc.php'); ?>
     <?php include_once('dist/includes/nav.inc.php'); ?>
 
       <!-- INNER CONTAINER -->
-      <div id="contact" class="inner-container">
+      <div id="contact" class="inner-container page--contact">
         <ul id="sub-nav" class="nav flex-column" role="tablist">
           <li class="nav-item"><a href="#panel-info1" class="nav-link scroll-to">Part 1</a></li>
           <li class="nav-item"><a href="#panel-info2" class="nav-link scroll-to">Part 2</a></li>

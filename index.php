@@ -3,7 +3,7 @@
 // HEADER
 $pageName = 'Designer &amp; Developer Stephen Fairbanks |';
 $myPath = '';
-$currentPage = "nav-cur--home";
+$currentNav = "nav-cur--home";
 
 include_once('dist/includes/head.inc.php'); ?>
 
@@ -15,7 +15,7 @@ include_once('dist/includes/head.inc.php'); ?>
     <?php include_once('dist/includes/nav.inc.php'); ?>
 
       <!-- INNER CONTAINER -->
-      <div id="home" class="inner-container">
+      <div id="home" class="inner-container page--home">
         
 
   		<div id="panel-info1" class="full-panel panel--info1">
@@ -113,7 +113,7 @@ include_once('dist/includes/head.inc.php'); ?>
           <div class="content-block content-block--1 hidden-lg-down">
           </div>
           <div class="content-block content-block--2">
-            <a href="about.php" class="btn--circle" title="Next Page">Next Page</a>        
+            <a href="<?php echo $root; ?>/about.php" class="btn--circle" title="Next Page">Next Page</a>        
           </div>
           <div class="content-block content-block--3"> 
             <div class="skin-float"></div>
