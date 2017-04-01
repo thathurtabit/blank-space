@@ -17,6 +17,8 @@ include_once('dist/includes/head.inc.php'); ?>
           <li class="nav-item"><a href="#panel-info2" class="nav-link scroll-to">Part 2</a></li>
           <li class="nav-item"><a href="#panel-info3" class="nav-link scroll-to">Part 3</a></li>
           <li class="nav-item"><a href="#panel-info4" class="nav-link scroll-to">Part 4</a></li>
+          <li class="nav-item"><a href="#panel-info5" class="nav-link scroll-to">Part 5</a></li>
+          <li class="nav-item"><a href="#panel-info6" class="nav-link scroll-to">Part 6</a></li>
           <li class="nav-item"><a href="<?php echo $root ?>/about.php" class="nav-link scroll-to">Next</a></li>
         </ul>
 
@@ -31,7 +33,7 @@ include_once('dist/includes/head.inc.php'); ?>
           </div>
           <div class="content-block content-block--3"> 
             
-            <div class="skin-float">#1</div>
+            <div class="skin-float"></div>
 
           </div>
         </div>
@@ -41,10 +43,10 @@ include_once('dist/includes/head.inc.php'); ?>
           <div class="content-block content-block--1">
           </div>
           <div class="content-block content-block--2">
-            <h3>I enjoy making things usuable, as well as pretty</h3>       
+            <h3>I enjoy making things usuable,<br />as well as pretty</h3>       
           </div>
           <div class="content-block content-block--3"> 
-            <div class="skin-float">#2</div>
+            <div class="skin-float"></div>
           </div>
         </div>
   		</div>
@@ -56,7 +58,7 @@ include_once('dist/includes/head.inc.php'); ?>
             <h3>I mainly design in code<br />(HTML, CSS, JavaScript)</h3>        
           </div>
           <div class="content-block content-block--3"> 
-            <div class="skin-float">#3</div>
+            <div class="skin-float"></div>
           </div>
         </div>
       </div>
@@ -65,10 +67,10 @@ include_once('dist/includes/head.inc.php'); ?>
           <div class="content-block content-block--1">
           </div>
           <div class="content-block content-block--2">
-            <h3>But I also just code OR design<br />(If that makes sense)</h3>        
+            <h3>I've been making websites<br />since 1995 <span>I'm old now</span></h3>        
           </div>
           <div class="content-block content-block--3"> 
-            <div class="skin-float">#4</div>
+            <div class="skin-float"></div>
           </div>
         </div>
       </div>
@@ -77,10 +79,22 @@ include_once('dist/includes/head.inc.php'); ?>
           <div class="content-block content-block--1">
           </div>
           <div class="content-block content-block--2">
+            <h3>I like pizza,<br />I don't like spiders</h3>        
+          </div>
+          <div class="content-block content-block--3"> 
+            <div class="skin-float"></div>
+          </div>
+        </div>
+      </div>
+      <div id="panel-info6" class="full-panel panel--info6">
+        <div class="content-wrap">
+          <div class="content-block content-block--1">
+          </div>
+          <div class="content-block content-block--2">
             <a href="about.php">Go to Next Page</a>        
           </div>
           <div class="content-block content-block--3"> 
-            <div class="skin-float">#5</div>
+            <div class="skin-float"></div>
           </div>
         </div>
       </div>

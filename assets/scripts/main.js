@@ -147,6 +147,41 @@
       });
     }
 
+
+    var panelInfo6 = document.getElementById('panel-info6');
+    // If it exists, then create a waypoint
+    if (typeof(panelInfo6) !== 'undefined' && panelInfo6 != null) {
+          // It exists, so...
+      var waypoint6 = new Waypoint({
+        element: panelInfo6,
+        handler: function(direction) {
+          currentPanel = 6;
+          console.log("Waypoint says: Current panel " + currentPanel + " is active.");
+          $(this.element).addClass('waypoint-active');
+        },
+        offset: 'bottom-in-view'
+      });
+    }
+
+
+    var panelInfo7 = document.getElementById('panel-info7');
+    // If it exists, then create a waypoint
+    if (typeof(panelInfo7) !== 'undefined' && panelInfo7 != null) {
+          // It exists, so...
+      var waypoint7 = new Waypoint({
+        element: panelInfo7,
+        handler: function(direction) {
+          currentPanel = 7;
+          console.log("Waypoint says: Current panel " + currentPanel + " is active.");
+          $(this.element).addClass('waypoint-active');
+        },
+        offset: 'bottom-in-view'
+      });
+    }
+
+
+
+
   }
 
   function loaderAnim() {
@@ -166,7 +201,7 @@
   // LOAD WEB FONTS
   WebFont.load({
     google: {
-      families: ['Open Sans']
+      families: ['Open Sans:300,400']
     },
     active: function () {
         

@@ -76,10 +76,22 @@ include_once('dist/includes/head.inc.php'); ?>
           <div class="content-block content-block--1">
           </div>
           <div class="content-block content-block--2">
-            <a href="about.php">Go to Next Page</a>        
+            <h3>I like pizza<br />I don't like spiders</h3>        
           </div>
           <div class="content-block content-block--3"> 
             <div class="skin-float">#5</div>
+          </div>
+        </div>
+      </div>
+      <div id="panel-info6" class="full-panel panel--info6">
+        <div class="content-wrap">
+          <div class="content-block content-block--1">
+          </div>
+          <div class="content-block content-block--2">
+            <a href="about.php">Go to Next Page</a>        
+          </div>
+          <div class="content-block content-block--3"> 
+            <div class="skin-float">#6</div>
           </div>
         </div>
       </div>
