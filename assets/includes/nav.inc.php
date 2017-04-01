@@ -10,7 +10,7 @@ $root = "http://localhost:3000/blank-space";
   <button class="navbar-toggler navbar-toggler-right" type="button" aria-label="Toggle navigation">
     <span class="navbar-toggler-bar"></span>
   </button>
-  <a class="navbar-brand nav-link" href="<?php echo $root ?>" title="<?php echo $websiteName; ?>"><h1><?php echo $websiteName; ?></h1></a>
+  <a class="navbar-brand nav-link mr-auto" href="<?php echo $root ?>" title="<?php echo $websiteName; ?>"><h1><?php echo $websiteName; ?></h1></a>
 
   <div class="collapse navbar-collapse" id="navbarToggler">
     <ul class="navbar-nav">

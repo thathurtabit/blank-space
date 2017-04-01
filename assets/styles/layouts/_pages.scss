@@ -37,8 +37,9 @@
 }
 
 .content-block--3 {
-	background: $blue;
+	z-index: 2;
 }
+
 
 // RESPONSIVE FROM LARGE
 @include media-breakpoint-up(lg) {
@@ -46,6 +47,43 @@
 	.barba-container {
 		margin: 0 $page-spacing-sides 0;
 		background: $white;
+		position: relative;
+	}
+
+	.inner-container {
+		&::after {
+			content: "";
+			width: 50%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 50%;
+			background: $brand-primary;
+			z-index: 1;
+		}
+	}
+
+	// Add Shadows to page sides
+	.barba-container::before,
+	.barba-container::after {
+		content: "";
+		position: fixed;
+		width: 1px;
+		background: transparent;
+		top: $page-spacing-top;
+		height: 100vh - $page-spacing-top;
+	}
+
+	.barba-container::before {
+		left: $page-spacing-sides;
+		box-shadow: -3px 5px 10px rgba(0,0,0,0.2);
+	}
+
+	.barba-container::after {
+		right: $page-spacing-sides;
+		box-shadow: 3px 5px 10px rgba(0,0,0,0.2);
+
 	}
 
 
@@ -55,6 +93,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		text-align: center;
 	}
 
 	.content-block--1 {
@@ -66,12 +105,14 @@
 		// If it's the first one, show it above the rest
 		#panel-info1 & {
 			z-index: $zindex-dropdown-backdrop;
+			border-bottom: 1px solid $border-color;
 		}
 
 		// When Waypoint is active
 		.waypoint-active & {
 			position: fixed;
 			top: $page-spacing-top;
+			height: 50vh - ($page-spacing-top / 1.5);
 			width: 50% - $page-spacing-sides;
 			left: $page-spacing-sides;
 		}
@@ -84,13 +125,19 @@
 		height: 50vh;
 	}
 
-	.content-block--3 {
+	.content-block--3,
+	.skin-float {
 		bottom: 0;
 		top: $page-spacing-top;
 		right: 0;
 		width: 50%; // percent-based because Chrome gets confused with the scrollbar
 		height: 100vh;
-		
+	}
+	.skin-float {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
 		// When Waypoint is active
 		.waypoint-active & {

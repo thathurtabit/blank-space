@@ -4,12 +4,11 @@
 // the Bootstrap defaults without modifying key, versioned files.
 
 $transition-time: 0.5s;
-$page-spacing-top: 6vh;
+$page-spacing-top: 8vh;
 $page-spacing-sides: 3%;
 
 
 // Table of Contents
-//
 // Colors
 // Options
 // Spacing
@@ -114,8 +113,10 @@ $gray-light:                #636c72 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
+$border-color:              $gray-lighter;
+
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue !default;
+$brand-primary:             #4FCCCE !default;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;
@@ -185,7 +186,7 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:       darken($white, 10%) !default;
+$body-bg:       darken($white, 4%) !default;
 $body-color:    $gray-dark !default;
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;

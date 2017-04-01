@@ -1,6 +1,6 @@
 <?php
 // Change this var to update your website name
-$websiteName = "steis.me"; ?>
+$websiteName = "ratheraweso.me"; ?>
 
 
 <!DOCTYPE html>

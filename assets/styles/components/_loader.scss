@@ -1,9 +1,11 @@
 #loading-cover {
 	transition: transform $transition-time ease-in-out, opacity $transition-time ease-in-out;
 	transform: translate(0, 0);
+  border-radius: 100%;
+  background-color: $white;
 	position: fixed;
 	opacity: 1;
-	top: 50%;
+	top: 52.5%;
 	left: 50%;
 	z-index: $zindex-tooltip;
 	width: 30px;
@@ -26,7 +28,7 @@ circle.rotate {
   fill: transparent;
   stroke-dasharray: 600;
   stroke-dashoffset: 600;
-  animation: anim-circle-border ($transition-time * 3) ease-in-out infinite alternate;
+  animation: anim-circle-border ($transition-time * 2) ease-in-out infinite alternate;
 }
 
 

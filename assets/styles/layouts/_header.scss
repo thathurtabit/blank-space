@@ -11,15 +11,58 @@
 .navbar {
 	background-color: $body-bg;
 	height: $page-spacing-top;
+	padding: 0 $page-spacing-sides;
+	font-size: 15px;
+}
+
+.navbar-brand {
+	padding: 0;
+	font-size: 15px;
+}
+
+.navbar-nav {
+	align-self: flex-end;
+	text-transform: lowercase;
+}
+
+.navbar-toggleable-sm .navbar-collapse {
+	@include media-breakpoint-up(md) {
+		width: auto;
+	}
+}
+
+
+
+.navbar-brand h1 {
+	font-size: 1rem;
+	margin: 0;
 }
 
 #sub-nav {
-	position: fixed;
-	top: 100px;
-	left: 0;
-	z-index: $zindex-navbar;
 
-	.active {
-		color: $red;
+	.nav-link.active {
+		color: $brand-primary;
 	}
+
+	// RESPONSIVE
+	@include media-breakpoint-up(lg) {
+		position: fixed;
+		top: $page-spacing-top + 3;
+		left: $page-spacing-sides;
+		z-index: $zindex-navbar;
+	}
+}
+
+
+#sub-nav .nav-item {
+	border-top: 1px solid $border-color;
+}
+
+#sub-nav .nav-link {
+	padding: 3px 3px 3px 10px;
+	margin: 3px 0;
+	font-size: 8px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: lighten($gray-light, 15%);
 }
