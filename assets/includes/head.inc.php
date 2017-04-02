@@ -19,18 +19,18 @@ $websiteName = "ratheraweso.me"; ?>
   <link rel="mask-icon" href="<?php echo $myPath; ?>dist/images/safari-pinned-tab.svg" color="#3bc6c8">
   <meta name="theme-color" content="#3bc6c8">
   
-  <title><?php echo $pageName . " " . $websiteName; ?></title>
+  <title><?php echo $pageName . " Freelance Designer &amp; Developer | " . $websiteName; ?></title>
 
-  <link rel="canonical" href="http://blacklodge.me">
+  <link rel="canonical" href="http://ratheraweso.me">
   <meta property="og:locale" content="en_GB">
   <meta property="og:type" content="website">
   <meta property="og:title" content="<?php echo $websiteName; ?>">
-  <meta property="og:description" content="<?php echo $pageName . " " . $websiteName; ?>">
-  <meta property="og:url" content="www">
+  <meta property="og:description" content="<?php echo $pageName . " Freelance Designer &amp; Developer | " . $websiteName; ?>">
+  <meta property="og:url" content="http://ratheraweso.me">
   <meta property="og:site_name" content="<?php echo $websiteName; ?>">
-  <meta property="og:image" content="http://blacklodge.me/dist/images/og.png" />
+  <meta property="og:image" content="http://ratheraweso.me/dist/images/og.png" />
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:description" content="<?php echo $pageName . " " . $websiteName; ?>">
+  <meta name="twitter:description" content="<?php echo $pageName . " Freelance Designer &amp; Developer  | " . $websiteName; ?>">
   <meta name="twitter:title" content="<?php echo $websiteName; ?>">
 </head>
 

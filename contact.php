@@ -25,10 +25,11 @@ include_once('dist/includes/head.inc.php'); ?>
             <h2>Get in touch</h2>
 
             <ul id="sub-nav" class="nav" role="tablist">
+            <li class="nav-item"><a href="<?php echo $root ?>/about" title="About" class="nav-link scroll-to"><</a></li>
             <li class="nav-item"><a href="#panel-info1" class="nav-link scroll-to">01</a></li>
             <li class="nav-item"><a href="#panel-info2" class="nav-link scroll-to">02</a></li>
             <li class="nav-item"><a href="#panel-info3" class="nav-link scroll-to">03</a></li>
-            <li class="nav-item"><a href="<?php echo $root ?>/contact.php" class="nav-link scroll-to">></a></li>
+            
           </ul>
 
           </div>
@@ -53,7 +54,7 @@ include_once('dist/includes/head.inc.php'); ?>
                 <h3>Contact info</h3>
                 <p>
                   Like some weird internet shape-shifting thing, I can take many forms.</p>
-                  <p>You can find me through one of the many links below, or find me through my main website: <a href="http://ghosthorses.co.uk" target="_blank" class="btn-link--alt">Ghosthorses.co.uk</a>
+                  <p>You can find me through one of the many links below, or <em>contact me</em> through my main website: <a href="http://ghosthorses.co.uk/contact" target="_blank" class="btn-link--alt">Ghosthorses.co.uk</a>
               </p>
             </div>
            

@@ -1,7 +1,7 @@
 <?php
 
 // HEADER
-$pageName = 'Designer &amp; Developer Stephen Fairbanks |';
+$pageName = 'Stephen Fairbanks | ';
 $myPath = '';
 $currentNav = "nav-cur--home";
 
@@ -31,7 +31,8 @@ include_once('dist/includes/head.inc.php'); ?>
               <li class="nav-item"><a href="#panel-info4" class="nav-link scroll-to">04</a></li>
               <li class="nav-item"><a href="#panel-info5" class="nav-link scroll-to">05</a></li>
               <li class="nav-item"><a href="#panel-info6" class="nav-link scroll-to">06</a></li>
-              <li class="nav-item"><a href="<?php echo $root ?>/about.php" class="nav-link scroll-to">></a></li>
+              <li class="nav-item"><a href="#panel-info7" class="nav-link scroll-to">07</a></li>
+              <li class="nav-item"><a href="<?php echo $root ?>/about" title="About" class="nav-link scroll-to">></a></li>
             </ul>
 
           </div>
@@ -115,7 +116,7 @@ include_once('dist/includes/head.inc.php'); ?>
           <div class="content-block content-block--2">
             <!-- CONTENT LIFT -->
             <div class="content--lift">
-              <a href="<?php echo $root; ?>/about.php" class="btn--circle" title="Next Page">Next Page</a>
+              <a href="<?php echo $root; ?>/about" class="btn--circle" title="Next Page">Next Page</a>
             </div>
             <!-- / CONTENT LIFT -->
           </div>

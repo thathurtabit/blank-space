@@ -192,7 +192,7 @@
   // LOAD WEB FONTS
   WebFont.load({
     google: {
-      families: ['Open Sans:300,400,800']
+      families: ['Open Sans:300,400,700']
     },
     active: function () {
         

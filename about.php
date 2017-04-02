@@ -1,7 +1,7 @@
 <?php
 
 // HEADER
-$pageName = 'About Stephen Fairbaks |';
+$pageName = 'About Stephen Fairbanks |';
 $myPath = '';
 $currentNav = "nav-cur--about";
 
@@ -45,11 +45,12 @@ include_once('dist/includes/head.inc.php'); ?>
             <h2>Vital statistics</h2>
 
             <ul id="sub-nav" class="nav" role="tablist">
+	          <li class="nav-item"><a href="<?php echo $root ?>" title="Home" class="nav-link scroll-to"><</a></li>
 	          <li class="nav-item"><a href="#panel-info1" class="nav-link scroll-to">01</a></li>
 	          <li class="nav-item"><a href="#panel-info2" class="nav-link scroll-to">02</a></li>
 	          <li class="nav-item"><a href="#panel-info3" class="nav-link scroll-to">03</a></li>
 	          <li class="nav-item"><a href="#panel-info4" class="nav-link scroll-to">04</a></li>
-	          <li class="nav-item"><a href="<?php echo $root ?>/contact.php" class="nav-link scroll-to">></a></li>
+	          <li class="nav-item"><a href="<?php echo $root ?>/contact" title="Contact" class="nav-link scroll-to">></a></li>
 	        </ul>
 
           </div>
@@ -130,7 +131,7 @@ include_once('dist/includes/head.inc.php'); ?>
 
 
 		        <div class="block--last">
-			        <a href="<?php echo $root; ?>/contact.php" class="btn--circle" title="Next Page">Next Page</a>
+			        <a href="<?php echo $root; ?>/contact" class="btn--circle" title="Next Page">Next Page</a>
 			    </div>
 
 			
