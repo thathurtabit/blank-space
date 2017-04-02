@@ -23,7 +23,6 @@
   
   var currentPanel = 1;
   var totalPanels = $('.full-panel').length;
-  console.log("Total panels: " + totalPanels);
   
   // Start Barba
   Barba.Pjax.start();
@@ -67,7 +66,6 @@
 
   // Set my variables
   var totalPanels = $('.full-panel').length;
-  console.log("Total panels: " + totalPanels);
 
     
     var panelInfo1 = document.getElementById('panel-info1');
@@ -78,7 +76,6 @@
         element: panelInfo1,
         handler: function(direction) {
           currentPanel = 1;
-          console.log("Waypoint says: Current panel " + currentPanel + " is active.");
           $(this.element).addClass('waypoint-active');
         },
         offset: 'bottom-in-view'
@@ -93,7 +90,6 @@
         element: panelInfo2,
         handler: function(direction) {
           currentPanel = 2;
-          console.log("Waypoint says: Current panel " + currentPanel + " is active.");
           $(this.element).addClass('waypoint-active');
         },
         offset: 'bottom-in-view'
@@ -108,7 +104,6 @@
         element: panelInfo3,
         handler: function(direction) {
           currentPanel = 3;
-          console.log("Waypoint says: Current panel " + currentPanel + " is active.");
           $(this.element).addClass('waypoint-active');
         },
         offset: 'bottom-in-view'
@@ -124,7 +119,6 @@
         element: panelInfo4,
         handler: function(direction) {
           currentPanel = 4;
-          console.log("Waypoint says: Current panel " + currentPanel + " is active.");
           $(this.element).addClass('waypoint-active');
         },
         offset: 'bottom-in-view'
@@ -140,7 +134,6 @@
         element: panelInfo5,
         handler: function(direction) {
           currentPanel = 5;
-          console.log("Waypoint says: Current panel " + currentPanel + " is active.");
           $(this.element).addClass('waypoint-active');
         },
         offset: 'bottom-in-view'
@@ -156,7 +149,6 @@
         element: panelInfo6,
         handler: function(direction) {
           currentPanel = 6;
-          console.log("Waypoint says: Current panel " + currentPanel + " is active.");
           $(this.element).addClass('waypoint-active');
         },
         offset: 'bottom-in-view'
@@ -172,7 +164,6 @@
         element: panelInfo7,
         handler: function(direction) {
           currentPanel = 7;
-          console.log("Waypoint says: Current panel " + currentPanel + " is active.");
           $(this.element).addClass('waypoint-active');
         },
         offset: 'bottom-in-view'

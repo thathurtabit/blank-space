@@ -118,7 +118,7 @@ $gray-lightest:             #f7f7f9 !default;
 $border-color:              $gray-lighter;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             #4FCCCE !default;
+$brand-primary:             darken(#4FCCCE, 5%) !default;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;

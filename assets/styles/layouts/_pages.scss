@@ -54,15 +54,25 @@
 	background: darken($white, 3%);
 }
 
-.content-block--3 {
+.content-block--3 {	
+	transition: opacity $transition-time * 2 ease-in-out;
+	transition-delay: $transition-time * 2;
+	opacity: 0;
 	z-index: 2;
+	color: $white;
+
+	.active.loaded & {
+		opacity: 1;
+	}
+
+	.page--about &,
+	.page--contact & {
+		background: $brand-primary;
+	}
 }
 
 
-
-
 .inner-container {
-	overflow: hidden;
 	margin-top: $navbar-height;
 	background: adjust-hue($brand-primary, 10%);
 	@include media-breakpoint-up(lg) {
@@ -71,8 +81,15 @@
 	}
 }
 
+// Required on the homepage
+#home.inner-container {
+	overflow: hidden;
+}
+
 // ADD THE BG FONT FOR EACH PAGE
-.inner-container::before {
+.inner-container::before,
+#about .content-block--3::before,
+#contact .content-block--3::before {
 	transition: opacity $transition-time * 5 ease-out;
 	transition-delay: $transition-time * 3;
 	content: "";
@@ -104,12 +121,14 @@
 	content: "'Sup?";
 }
 
-#about.inner-container::before {
+#about .content-block--3::before {
 	content: "About";
+	z-index: 3;
 }
 
-#contact.inner-container::before {
+#contact .content-block--3::before {
 	content: "Contact";
+	z-index: 3;
 }
 
 .content-block {
@@ -134,7 +153,7 @@
 		position: relative;
 	}
 
-	.inner-container {
+	.page--home.inner-container {
 		&::after {
 			content: "";
 			width: 50%;
@@ -206,7 +225,8 @@
 		z-index: 2;
 
 				// If it's the first one, show it above the rest
-		#panel-info1 & {
+		.page--about #panel-info1 &,
+		.page--contact #panel-info1 & {
 			z-index: $zindex-dropdown-backdrop;
 		}
 
@@ -221,7 +241,11 @@
 		}
 	}
 
-	
+	.page--about .content-block--3,
+	.page--contact .content-block--3 {
+		height: auto;
+		bottom: initial;
+	}
 
 	.content-block--3,
 	.skin-float {
@@ -299,4 +323,77 @@
 	}
 	
 	
+}
+
+
+.content--lift {	
+	position: relative;
+	z-index: 4;
+}
+
+
+.block--header {
+	display: block;
+	margin: 50px 30px 30px;
+
+	img {
+		transition: filter $transition-time ease-in-out;
+		border-radius: 100%;
+		max-width: 125px;
+		filter: invert(0deg);
+	    box-shadow: 0 0 0 10px darken($brand-primary, 5%);
+
+	    &:hover {
+			filter: hue-rotate(90deg);
+	    }
+	}
+}
+
+
+.block--list {
+	display: block;
+	border-bottom: 1px solid darken($brand-primary, 5%);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.block--list h3 {
+	background: darken($brand-primary, 10%);
+	padding: 5px 10px;
+	font-size: 17px;
+	border-radius: 20px;
+	display: inline-block;
+}
+
+.block--list ul {
+	display: block;
+	text-align: left;
+	margin: 10px 10px;
+	padding: 0;
+}
+
+.block--list ul li {
+	list-style-type: none;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+.block--list ul li span {
+	display: block;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: darken($brand-primary, 20%);
+	margin-top: 10px;
+}
+
+
+.block--last {
+	background: $gray;
+	padding: 30px;
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }

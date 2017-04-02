@@ -108,7 +108,7 @@ include_once('dist/includes/head.inc.php'); ?>
           </div>
         </div>
       </div>
-      <div id="panel-info6" class="full-panel panel--info6 panel--last">
+      <div id="panel-info7" class="full-panel panel--info7 panel--last">
         <div class="content-wrap">
           <div class="content-block content-block--1 hidden-lg-down">
           </div>
