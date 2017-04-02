@@ -4,20 +4,33 @@ footer {
 footer .site-by {
 	display: none;
 	position: fixed;
-	bottom: 30px;
-	right: 30px;
+	bottom: 20px;
+	right: 20px;
+	background: rgba(255,255,255,0.5);
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+	#horse {
+		width: 22px;
+		position: relative;
+		left: -1px;
+	}
 
 	// SHOW ONLY ON LARGER SCREENS
 	@include media-breakpoint-up(md) {
-		display: block;
+		display: flex;
 	}
 }
 
 footer #horse {
-	fill: rgba(255,255,255,0.5);
+	fill: rgba(0,0,0,0.5);
 	width: 30px; 
 
 	&:hover {
-		fill: $brand-primary;
+		fill: rgba(0,0,0,0.75);
 	}
 }
