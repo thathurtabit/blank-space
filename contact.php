@@ -17,79 +17,112 @@ include_once('dist/includes/head.inc.php'); ?>
 
       <!-- INNER CONTAINER -->
       <div id="contact" class="inner-container page--contact">
-        <ul id="sub-nav" class="nav flex-column" role="tablist">
-          <li class="nav-item"><a href="#panel-info1" class="nav-link scroll-to">Part 1</a></li>
-          <li class="nav-item"><a href="#panel-info2" class="nav-link scroll-to">Part 2</a></li>
-          <li class="nav-item"><a href="#panel-info3" class="nav-link scroll-to">Part 3</a></li>
-          <li class="nav-item"><a href="#panel-info4" class="nav-link scroll-to">Part 4</a></li>
-          <li class="nav-item"><a href="<?php echo $root ?>/about.php" class="nav-link scroll-to">Next</a></li>
-        </ul>
-
-      <div id="panel-info1" class="full-panel panel--info1">
+        
+        <div id="panel-info1" class="full-panel panel--info1">
         <div class="content-wrap">
           <div class="content-block content-block--1">          
-            <h1 class="trans-letters"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></h1>
+            <h1 class="trans-letters"><span>C</span><span>o</span><span>n</span><span>t</span>a<span>c</span><span>t</span></h1>
             <h2>Get in touch</h2>
+
+            <ul id="sub-nav" class="nav" role="tablist">
+            <li class="nav-item"><a href="#panel-info1" class="nav-link scroll-to">01</a></li>
+            <li class="nav-item"><a href="#panel-info2" class="nav-link scroll-to">02</a></li>
+            <li class="nav-item"><a href="#panel-info3" class="nav-link scroll-to">03</a></li>
+            <li class="nav-item"><a href="#panel-info4" class="nav-link scroll-to">04</a></li>
+            <li class="nav-item"><a href="<?php echo $root ?>/contact.php" class="nav-link scroll-to">></a></li>
+          </ul>
+
           </div>
           <div class="content-block content-block--2">          
-            <h3>I design &amp; make websites</h3>          
+            <h3>Get your stalk on</h3>          
           </div>
-          <div class="content-block content-block--3"> 
+          <div class="content-block content-block--3">
+
+            <!-- CONTENT LIFT -->
+            <div class="content--lift">
             
-            <div class="skin-float">#1</div>
+              <div class="block--header">
+
+                <div class="block--header-img">
+                  <img src="dist/images/bw-smile.jpeg" alt="It's Stephen Fairbanks" />
+                </div>
+
+              </div>
+
+              
+              <div id="panel-info1" class="block--list">
+                <h3>Personal stats</h3>
+                <ul class="stat-list">
+                  <li><span>Name:</span> Stephen Fairbanks</li>
+                  <li><span>Age:</span> <?php echo $age; ?></li>
+                  <li><span>Height:</span> 6'0" (I think)</li>
+                  <li><span>Location:</span> Manchester, England</li>
+              </ul>
+            </div>
+
+            <div id="panel-info2" class="block--list">
+                <h3>A very particular set of skills</h3>
+                <ul class="stat-list">
+                  <li>Digital Design (UI)</li>
+                  <li>Adobe Creative Cloud</li>
+                  <li>CSS3 (Sass, Less)</li>
+                  <li>HTML5</li>
+                  <li>JavaScript</li>
+                  <li>WordPress</li>
+                  <li>Git / SVN</li>
+              </ul>
+            </div>
+
+            <div id="panel-info3" class="block--list">
+                <h3>Some companies I've worked with</h3>
+                <ul class="stat-list">
+                  <li><a href="http://ghosthorses.co.uk" target="_blank" class="btn-link--alt">Ghosthorses</a></li>
+                  <li><a href="http://weconvene.com" target="_blank" class="btn-link--alt">WeConvene</a></li>
+                  <li><a href="http://unshackled.com" target="_blank" class="btn-link--alt">Unshackled</a></li>
+                  <li><a href="http://codecomputerlove.com" target="_blank" class="btn-link--alt">Code Computerlove</a></li>
+                  <li><a href="http://creativespark.co.uk" target="_blank" class="btn-link--alt">Creative Spark</a></li>
+                  <li><a href="https://havaslynx.com" target="_blank" class="btn-link--alt">Havas Lynx</a></li>
+              </ul>
+            </div>
+
+            <div id="panel-info4" class="block--list">
+                <h3>Personal projects</h3>
+                <ul class="stat-list">
+                  <li><a href="http://nonbeliever.co.uk" target="_blank" class="btn-link--alt">Nonbeliever</a></li>
+                  <li><a href="http://fretmap.com" target="_blank" class="btn-link--alt">Fretmap</a></li>
+                  <li><a href="http://qwota.co.uk" target="_blank" class="btn-link--alt">Qwota</a></li>
+                  <li><a href="http://itwouldbeniceif.com" target="_blank" class="btn-link--alt">It Would Be Nice If</a></li>
+                  <li><a href="http://whatisyourproblem.co.uk" target="_blank" class="btn-link--alt">What Is Your Problem?</a></li>
+              </ul>
+            </div>
+
+            <div id="section4" class="block--list">
+                <h3>Bragging rights</h3>
+                <ul class="stat-list">
+                  <li>2 <a href="http://awwwards.com" target="_blank" class="btn-link--alt">Awwwards</a> 'Website of the Day'</li>
+                  <li>Numerous other CSS-based awards</li>
+                  <li>Features in Net magazine a few times</li>
+                  <li>11+ years experience in Design / Development</li>
+                  <li>Used to live next door to Manchester United's reserve goalkeeper</li>
+                  <li>Released 4 albums worth of music (nobody listens to them)</li>
+              </ul>
+            </div>
+
+
+            <div class="block--last">
+              <a href="<?php echo $root; ?>/" class="btn--circle" title="Home Page">Home Page</a>
+          </div>
+
+      
+            </div>
+            <!-- / CONTENT LIFT -->
 
           </div>
         </div>
       </div>
-      <div id="panel-info2" class="full-panel panel--info2">
-        <div class="content-wrap">
-          <div class="content-block content-block--1">
-          </div>
-          <div class="content-block content-block--2">
-            <h3>I enjoy making things usuable, as well as pretty</h3>       
-          </div>
-          <div class="content-block content-block--3"> 
-            <div class="skin-float">#2</div>
-          </div>
-        </div>
-      </div>
-      <div id="panel-info3" class="full-panel panel--info3">
-        <div class="content-wrap">
-          <div class="content-block content-block--1">
-          </div>
-          <div class="content-block content-block--2">
-            <h3>I mainly design in code<br />(HTML, CSS, JavaScript)</h3>        
-          </div>
-          <div class="content-block content-block--3"> 
-            <div class="skin-float">#3</div>
-          </div>
-        </div>
-      </div>
-      <div id="panel-info4" class="full-panel panel--info4">
-        <div class="content-wrap">
-          <div class="content-block content-block--1">
-          </div>
-          <div class="content-block content-block--2">
-            <h3>But I also just code OR design<br />(If that makes sense)</h3>        
-          </div>
-          <div class="content-block content-block--3"> 
-            <div class="skin-float">#4</div>
-          </div>
-        </div>
-      </div>
-      <div id="panel-info5" class="full-panel panel--info5">
-        <div class="content-wrap">
-          <div class="content-block content-block--1">
-          </div>
-          <div class="content-block content-block--2">
-            <a href="about.php">Go to Next Page</a>        
-          </div>
-          <div class="content-block content-block--3"> 
-            <div class="skin-float">#5</div>
-          </div>
-        </div>
-      </div>
+      
       <?php include_once('dist/includes/loader.inc.php'); ?>
+
     </div><!-- / INNER CONTAINER -->
     </div><!-- / BARBA CONTAINER -->
       </div>
