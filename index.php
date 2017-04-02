@@ -53,7 +53,7 @@ include_once('dist/includes/head.inc.php'); ?>
           <div class="content-block content-block--1 hidden-lg-down">
           </div>
           <div class="content-block content-block--2">
-            <h3>I enjoy making things <strong>usuable</strong>,<br />as well as <strong>pretty</strong></h3>       
+            <h3>I enjoy making things <strong>usable</strong>,<br />as well as <strong>pretty</strong></h3>       
           </div>
           <div class="content-block content-block--3"> 
             <div class="skin-float"></div>

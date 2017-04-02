@@ -64,7 +64,7 @@ include_once('dist/includes/head.inc.php'); ?>
 	          	<div class="block--header">
 
 	          		<div class="block--header-img">
-	          			<img src="dist/images/bw-smile.jpeg" alt="It's Stephen Fairbanks" />
+	          			<img src="dist/images/about-img.png" alt="It's Stephen Fairbanks - Designer &amp; Developer - All about him!" />
 	          		</div>
 
 	          	</div>
