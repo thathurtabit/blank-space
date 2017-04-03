@@ -61,7 +61,8 @@ include_once('dist/includes/head.inc.php'); ?>
             <div id="panel-info2" class="block--list">
                 <h3>Places that I exist</h3>
                 <ul class="stat-list">
-                  <li><span>Main portfolio: </span><a href="http://ghosthorses.co.uk/contact" target="_blank" class="btn-link--alt">ghosthorses</a></li>
+                  <li><span>Portfolio: </span><a href="http://ghosthorses.co.uk/contact" target="_blank" class="btn-link--alt">ghosthorses</a></li>
+                  <li><span>CV: </span><a href="https://www.dropbox.com/s/l98io3x4igg7dxm/Resume.pdf?dl=0" target="_blank" class="btn-link--alt">dropbox</a></li>
                   <li><span>Twitter: </span><a href="http://twitter.com/nonbeliever" target="_blank" class="btn-link--alt">nonbeliever</a></li>
                   <li><span>CodePen: </span><a href="http://codepen.io/thathurtabit/" target="_blank" class="btn-link--alt">thathurtabit</a></li>
                   <li><span>GitHub: </span><a href="https://github.com/thathurtabit" target="_blank" class="btn-link--alt">thathurtabit</a></li>
