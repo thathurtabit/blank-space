@@ -90,7 +90,11 @@ include_once('dist/includes/head.inc.php'); ?>
           <div class="content-block content-block--1 hidden-lg-down">
           </div>
           <div class="content-block content-block--2">
-            <h3>I've won some <strong>Awwwards</strong> in the past <small class="display--block">(Not to brag, OK, maybe a bit)</small></h3>        
+            <!-- CONTENT LIFT -->
+            <div class="content--lift">
+              <h3>I've won some <a href="http://awwwards.com" title="Visit Awwwards.com" target="_blank"><strong>Awwwards</strong></a> in the past <small class="display--block">(Not to brag, OK, maybe a bit)</small></h3>
+            </div>
+            <!-- / CONTENT LIFT -->  
           </div>
           <div class="content-block content-block--3"> 
             <div class="skin-float"></div>
