@@ -103,6 +103,8 @@ include_once('dist/includes/head.inc.php'); ?>
 			            <li><a href="http://codecomputerlove.com" target="_blank" class="btn-link--alt">Code Computerlove</a></li>
 			            <li><a href="http://creativespark.co.uk" target="_blank" class="btn-link--alt">Creative Spark</a></li>
 			            <li><a href="https://havaslynx.com" target="_blank" class="btn-link--alt">Havas Lynx</a></li>
+			            <li><a href="http://www.smrs.co.uk" target="_blank" class="btn-link--alt">SMRS</a></li>
+			            <li><a href="http://ampersandcommerce.com/" target="_blank" class="btn-link--alt">Ampersand</a></li>
 			        </ul>
 		        </div>
 
