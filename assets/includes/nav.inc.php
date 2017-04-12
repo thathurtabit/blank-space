@@ -1,7 +1,7 @@
 <?php
 // NOTE: You'll need to change this on the live server, don't add trailing slash "/"
 
-$root = "http://localhost:3000/blank-space";
+$root = "http://localhost:3000/ratherawesome";
 
 ?>
 

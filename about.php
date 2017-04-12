@@ -111,11 +111,12 @@ include_once('dist/includes/head.inc.php'); ?>
 		        <div id="panel-info4" class="block--list">
 		            <h3>Personal projects</h3>
 		            <ul class="stat-list">
-			            <li><a href="http://nonbeliever.co.uk" target="_blank" class="btn-link--alt">Nonbeliever</a></li>
-			            <li><a href="http://fretmap.com" target="_blank" class="btn-link--alt">Fretmap</a></li>
-			            <li><a href="http://qwota.co.uk" target="_blank" class="btn-link--alt">Qwota</a></li>
 			            <li><a href="http://itwouldbeniceif.com" target="_blank" class="btn-link--alt">It Would Be Nice If</a></li>
+			            <li><a href="http://thesolarsystem.space" target="_blank" class="btn-link--alt">The Solar System</a></li>
+			            <li><a href="http://fretmap.com" target="_blank" class="btn-link--alt">Fretmap</a></li>
+			            <li><a href="http://qwota.co.uk" target="_blank" class="btn-link--alt">Qwota</a></li>			            
 			            <li><a href="http://whatisyourproblem.co.uk" target="_blank" class="btn-link--alt">What Is Your Problem?</a></li>
+			            <li><a href="http://nonbeliever.co.uk" target="_blank" class="btn-link--alt">Nonbeliever</a></li>
 			        </ul>
 		        </div>
 
